@@ -41,8 +41,8 @@ def install_packages():
         os.system("pip install nvidia-nvjitlink-cu12==12.3.101 -q")
         
         
-        os.system("pip install -e simformer/src/probjax[cuda]")
-        os.system("pip install -e simformer/src/scoresbibm")
+        os.system("pip install -e SpatFormer/building_block/probjax[cuda]")
+        os.system("pip install -e SpatFormer/building_block/scoresbibm")
         os.system("pip install ipympl -q --root-user-action=ignore")
         
         print("Killing Kernel for restart")
