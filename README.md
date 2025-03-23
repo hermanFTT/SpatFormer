@@ -5,13 +5,13 @@
 ## Installation
 
 If you have conda installed, you should first load a new environment. A minimal environment with
-recommended cuda version for JAX is provided in `src/environment.yml`.
+recommended cuda version for JAX is provided in `building_block/environment.yml`.
 
 ```bash
-conda env create --file=src/environment.yml
-conda activate simformer
-pip install -e src/probjax[cuda]
-pip install -e src/scoresbibm
+conda env create --file=building_block/environment.yml
+conda activate SpatFormer
+pip install -e building_block/probjax[cuda]
+pip install -e building_block/scoresbibm
 ```
 
 We recommend installing it on a CUDA capable machine, as the experiments heavily benefit
